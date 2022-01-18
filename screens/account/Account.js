@@ -7,12 +7,7 @@ import Axios from 'axios';
 
 export default function Account() {
 
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('');
-
     const { register, handleSubmit } = useForm();
-    // const onSubmit = data => console.log(data);
 
     const onSubmit = (data)=> {
     
@@ -24,34 +19,6 @@ export default function Account() {
 
 
     return (
-        // <View>
-        //     <Text>Login</Text>
-        //     <hr/>
-        //     <Text>Your name</Text>
-        //     <TextInput
-        //         placeholder='Name'
-        //         leftIcon={{ type: 'font-awesome', name: 'id-card' }}
-        //         onChangeText={(name)=> {setName(name)}}
-        //     />
-        //     <Text>Your email address</Text>
-        //     <TextInput
-        //         placeholder='email@address.com'
-        //         leftIcon={{ type: 'font-awesome', name: 'envelope' }}
-        //         onChangeText={(email)=> {setEmail(email)}}
-        //     />
-        //     <Text>Password</Text>
-        //     <TextInput
-        //         placeholder='Password'
-        //         leftIcon={{ type: 'font-awesome', name: 'lock' }}
-        //         onChange={(password)=> {setPassword(password)}}
-        //     />
-        //     <hr/>
-        //     <Button 
-        //         title='Submit'
-        //         type='submit'
-        //         onPress={{submitUser}}
-        //         /> 
-        // </View>
         <form onSubmit={handleSubmit(onSubmit)}>
         <Text>Your name</Text>
         <input {...register('name')} 
@@ -65,7 +32,6 @@ export default function Account() {
         <input {...register('password')} 
             placeholder='Password'
         />
-  
         <input type="submit" />
       </form>
     )
