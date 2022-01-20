@@ -10,7 +10,6 @@ export default function DrizzStack() {
             <Stack.Screen
                 name='Drizz'
                 component={Drizz}
-                // options={{title: 'Drizz'}}
                 >
             </Stack.Screen>
         </Stack.Navigator>

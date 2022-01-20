@@ -32,7 +32,7 @@ export default function Account() {
 
     return (
         <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            {/* <form onSubmit={handleSubmit(onSubmit)}>
             <Text>Your name</Text>
             <input {...register('name')} 
                 placeholder='Enter your name'
@@ -48,7 +48,7 @@ export default function Account() {
                 type='current-password'
             />
         <input type="submit" />
-      </form>
+      </form> */}
       {isRegistered ? <UserLogged/> : <UserGuest/>}
     </div>
     )
